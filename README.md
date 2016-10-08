@@ -5,45 +5,43 @@ readme.txt has some information of the project
 run_analysis.R is the R code that produce
 resultset.txt as result.
 
-# Process is documented below:
-#
+Process is documented below:
 #                                    Given Raw Data Set
-#
-# Directory : Week4\Assignment\UCI HAR Dataset
-# Files:
-#       features.txt has 561 Column Names
-# Directory : Week4\Assignment\UCI HAR Dataset\test\
-# Files:
-#       X-test.txt Test data of 2947 obs. of 561 variables
-#       y_test.txt              2947 Activity ID  
-#       subject_test.txt        2947 subject
-#
-# Directory : Week4\Assignment\UCI HAR Dataset\train
-# Files:
-#       X-train  Training data  7352 obs. of 561 variables.
-#       y_train                 7352 Activity ID 
-#       subject_train.txt       7352 subject
-#####################################################
-##
-##                      TO PRODUCE A TIDY DATA SET
-##
-## 1. Merges the training and the test sets to create one data set.
-#               10299 Obs. of 561 variables
-#
-## 2. Extracts only the measurements on the mean and standard deviation for each measurement.
-#
-## 3. Uses descriptive activity names to name the activities in the data set
-#
-## 4. Appropriately labels the data set with descriptive variable names.
-#
-## 5. From the data set in step 4, creates a second, independent tidy data set 
-##    with the average of each variable for each activity and each subject.
-#
-# Additional Libraries : dplyr, tidyr,stringr
-#
-## 1. Merges the training and the test sets to create one data set. "X"
-#               10299 Obs. of 561 variables
-#
+
+ Directory : Week4\Assignment\UCI HAR Dataset
+ Files:
+       features.txt has 561 Column Names
+ Directory : Week4\Assignment\UCI HAR Dataset\test\
+ Files:
+       X-test.txt Test data of 2947 obs. of 561 variables
+       y_test.txt              2947 Activity ID  
+       subject_test.txt        2947 subject
+
+ Directory : Week4\Assignment\UCI HAR Dataset\train
+ Files:
+       X-train  Training data  7352 obs. of 561 variables.
+       y_train                 7352 Activity ID 
+       subject_train.txt       7352 subject
+
+                      TO PRODUCE A TIDY DATA SET
+
+ 1. Merges the training and the test sets to create one data set.
+               10299 Obs. of 561 variables
+
+ 2. Extracts only the measurements on the mean and standard deviation for each measurement.
+
+ 3. Uses descriptive activity names to name the activities in the data set
+
+ 4. Appropriately labels the data set with descriptive variable names.
+
+ 5. From the data set in step 4, creates a second, independent tidy data set 
+    with the average of each variable for each activity and each subject.
+
+ Additional Libraries : dplyr, tidyr,stringr
+
+ 1. Merges the training and the test sets to create one data set. "X"
+               10299 Obs. of 561 variables
+
 features holds data of 'features.txt'
 activity holds data of 'activity_labes.txt'
 test data is stored as 'X_test' from X_test.txt
